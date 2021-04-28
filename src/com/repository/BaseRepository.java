@@ -1,19 +1,16 @@
-package repository;
-
-
-import connector.PostgreConnector;
+package com.repository;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
 /**
- * Base repository for CRUD functions
+ * Base com.repository for CRUD functions
  * @param <T>: Entity Model
  */
 public abstract class BaseRepository<T> {
-    String tableName;
-    Connection connection = null;
+    private String tableName;
+    private Connection connection = null;
 
     public abstract T save(T entity);
 

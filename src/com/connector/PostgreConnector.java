@@ -1,10 +1,10 @@
-package connector;
+package com.connector;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 
 public class PostgreConnector {
-    Connection connection = null;
+    static Connection connection = null;
     String host = "localhost";
     int port = 5432;
     String database = "bookstore";
